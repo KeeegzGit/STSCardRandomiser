@@ -1,0 +1,10 @@
+C:\Users\shado\source\repos\STS card randomiser\bin\Debug\STS card randomiser.exe.config
+C:\Users\shado\source\repos\STS card randomiser\bin\Debug\STS card randomiser.exe
+C:\Users\shado\source\repos\STS card randomiser\bin\Debug\STS card randomiser.pdb
+C:\Users\shado\source\repos\STS card randomiser\obj\Debug\STS card randomiser.csproj.AssemblyReference.cache
+C:\Users\shado\source\repos\STS card randomiser\obj\Debug\STS_card_randomiser.Form1.resources
+C:\Users\shado\source\repos\STS card randomiser\obj\Debug\STS_card_randomiser.Properties.Resources.resources
+C:\Users\shado\source\repos\STS card randomiser\obj\Debug\STS card randomiser.csproj.GenerateResource.cache
+C:\Users\shado\source\repos\STS card randomiser\obj\Debug\STS card randomiser.csproj.CoreCompileInputs.cache
+C:\Users\shado\source\repos\STS card randomiser\obj\Debug\STS card randomiser.exe
+C:\Users\shado\source\repos\STS card randomiser\obj\Debug\STS card randomiser.pdb
