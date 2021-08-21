@@ -1,5 +1,5 @@
 
-In order to open the application, Navigate to the bin folder, then debug, then the application exe should be there.
+In order to open the application, Navigate to the obj folder, then debug, then the application exe should be there.
 
 To use the randomiser, first check the checkboxes of the card pools you would like to pull from, then hit set 1 time.
 After this click the "Choose" button whenever you want to roll a card
