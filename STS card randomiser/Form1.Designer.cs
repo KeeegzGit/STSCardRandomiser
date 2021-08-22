@@ -40,6 +40,7 @@ namespace STS_card_randomiser
             this.checkBoxCurses = new System.Windows.Forms.CheckBox();
             this.checkBoxStatuses = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.checkBoxSkip = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -154,7 +155,7 @@ namespace STS_card_randomiser
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Courier New", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 40);
+            this.button2.Location = new System.Drawing.Point(12, 11);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(171, 81);
             this.button2.TabIndex = 10;
@@ -162,11 +163,23 @@ namespace STS_card_randomiser
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // checkBoxSkip
+            // 
+            this.checkBoxSkip.AutoSize = true;
+            this.checkBoxSkip.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxSkip.Location = new System.Drawing.Point(190, 11);
+            this.checkBoxSkip.Name = "checkBoxSkip";
+            this.checkBoxSkip.Size = new System.Drawing.Size(128, 23);
+            this.checkBoxSkip.TabIndex = 11;
+            this.checkBoxSkip.Text = "Skip cards";
+            this.checkBoxSkip.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 304);
+            this.Controls.Add(this.checkBoxSkip);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.checkBoxStatuses);
             this.Controls.Add(this.checkBoxCurses);
@@ -198,6 +211,7 @@ namespace STS_card_randomiser
         private System.Windows.Forms.CheckBox checkBoxCurses;
         private System.Windows.Forms.CheckBox checkBoxStatuses;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBoxSkip;
     }
 }
 

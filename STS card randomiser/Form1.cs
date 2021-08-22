@@ -326,13 +326,17 @@ namespace STS_card_randomiser
             CurseCards.Clear();
             dicechoice.Clear();
 
-            dicechoice.Add("CommonCards");
-            dicechoice.Add("UncommonCards");
-            dicechoice.Add("RareCards");
-            dicechoice.Add("Skip");
+
+            if (checkBoxSkip.Checked == true)
+            { dicechoice.Add("Skip"); }
+            else { }
+            
 
             if (checkBoxIC.Checked == true)
             {
+                dicechoice.Add("CommonCards");
+                dicechoice.Add("UncommonCards");
+                dicechoice.Add("RareCards");
                 foreach (string s in CommonICards)
                     CommonCards.Add(s);
                 foreach (string s in UncommonICards)
@@ -343,6 +347,14 @@ namespace STS_card_randomiser
             else { }
             if (checkBoxSilent.Checked == true)
             {
+                if (checkBoxIC.Checked == false)
+                {
+                    dicechoice.Add("CommonCards");
+                    dicechoice.Add("UncommonCards");
+                    dicechoice.Add("RareCards");
+                }
+                else { }
+
                 foreach (string s in CommonSCards)
                     CommonCards.Add(s);
                 foreach (string s in UncommonSCards)
@@ -353,6 +365,13 @@ namespace STS_card_randomiser
             else { }
             if (checkBoxDefect.Checked == true)
             {
+                if (checkBoxIC.Checked == false && checkBoxSilent.Checked == false)
+                {
+                    dicechoice.Add("CommonCards");
+                    dicechoice.Add("UncommonCards");
+                    dicechoice.Add("RareCards");
+                }
+                else { }
                 foreach (string s in CommonDCards)
                     CommonCards.Add(s);
                 foreach (string s in UncommonDCards)
@@ -363,6 +382,13 @@ namespace STS_card_randomiser
             else { }
             if (checkBoxWatcher.Checked == true)
             {
+                if (checkBoxIC.Checked == false && checkBoxSilent.Checked == false && checkBoxDefect.Checked == false)
+                {
+                    dicechoice.Add("CommonCards");
+                    dicechoice.Add("UncommonCards");
+                    dicechoice.Add("RareCards");
+                }
+                else { }
                 foreach (string s in CommonWCards)
                     CommonCards.Add(s);
                 foreach (string s in UncommonWCards)
@@ -373,6 +399,13 @@ namespace STS_card_randomiser
             else { }
             if (checkBoxColourless.Checked == true)
             {
+                if (checkBoxIC.Checked == false && checkBoxSilent.Checked == false && checkBoxDefect.Checked == false && checkBoxWatcher.Checked == false)
+                {
+                    dicechoice.Add("CommonCards");
+                    dicechoice.Add("UncommonCards");
+                    dicechoice.Add("RareCards");
+                }
+                else { }
                 foreach (string s in UncommonCCards)
                     UncommonCards.Add(s);
                 foreach (string s in RareCCards)
